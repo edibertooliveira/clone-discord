@@ -6,9 +6,12 @@
         <AddCategoryIcon :size="21"/>
       </div>
     </div>
-    <ChannelButton />
-
-
+    <ChannelButton channelName="Bem-Vindo"/>
+    <ChannelButton channelName="REGRAS"/>
+    <ChannelButton channelName="Informações"/>
+    <ChannelButton selected channelName="sala-01"/>
+    <ChannelButton channelName="sala-02"/>
+    <ChannelButton channelName="sala-03"/>
   </div>
 </template>
 
@@ -25,7 +28,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .container{
   grid-area: CL;
   display: flex;
