@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="title">Server Vue</div>
+    <div class="title">Server //EO.</div>
     <div class="icon">
       <ExpandIcon />
     </div>
