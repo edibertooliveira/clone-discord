@@ -4,6 +4,7 @@
     <ServerName />
     <ChannelList />
     <UserInfo />
+    <ChannelInfo />
   </div>
 </template>
 
@@ -13,9 +14,7 @@ import ServerList from './Server-List';
 import ServerName from './Server-Name';
 import ChannelList from './Channel-List';
 import UserInfo from './User-Info';
-
-
-
+import ChannelInfo from './Channel-Info';
 
 export default {
   components: {
@@ -23,6 +22,7 @@ export default {
     ServerName,
     ChannelList,
     UserInfo,
+    ChannelInfo,
   }
 };
 
