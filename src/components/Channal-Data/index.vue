@@ -1,6 +1,13 @@
 <template>
   <div class="channel-data">
-    <div class="message">msg</div>
+    <div class="message">
+      <ChannelMessage
+      author="Ediberto Oliveira"
+      date="21/0/2012" isBot hasMention>
+      Olá Pessoal! Esta é uma mensagem
+      </ChannelMessage>
+
+    </div>
 
     <div class="input-wrapper">
       <input type="text" placeholder="Conversar em #sala-01">
@@ -12,11 +19,13 @@
 </template>
 
 <script>
+import ChannelMessage from './Channel-Menssage';
 import At from 'vue-material-design-icons/At';
 
 export default {
   components: {
     At,
+    ChannelMessage,
   }
 
 }
@@ -38,6 +47,12 @@ export default {
   height: calc(100vh - 46px - 68px);
   max-height: calc(100vh - 46px - 68px);
   overflow-y: scroll;
+
+  .channel-message:first-child {
+    margin-top: 0;
+  }
+
+
 
   &::-webkit-scrollbar {
     width: 8px;
