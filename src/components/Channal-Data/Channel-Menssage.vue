@@ -4,7 +4,7 @@
     <div class="message">
       <div class="user">
         <strong>{{author}}</strong>
-        <span class="bot" v-if="isbot">Bot</span>
+        <span class="bot" v-if="isBot">Bot</span>
         <span class="date">{{date}}</span>
       </div>
       <div class="body">
@@ -93,9 +93,16 @@ export default {
       color: var(--white);
       text-align: left;
       font-size: 16px;
+
+      .mention{
+        color: var(--link);
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
-
-
 
 </style>

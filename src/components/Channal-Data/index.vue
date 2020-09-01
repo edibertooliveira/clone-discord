@@ -2,10 +2,23 @@
   <div class="channel-data">
     <div class="message">
       <ChannelMessage
-      author="Ediberto Oliveira"
-      date="21/0/2012" isBot hasMention>
-      Olá Pessoal! Esta é uma mensagem
+      author="MecBOT"
+      date="21/0/2012" isBot >
+      Olá Pessoal! Proibido mandar mensagens duplicadas
       </ChannelMessage>
+      <ChannelMessage
+      v-for="message in 10" :key="message.id"
+      author="Ediberto Olieira"
+      date="21/0/2012">
+      Alguem pode me ajudar?
+      </ChannelMessage>
+      <ChannelMessage
+      author="MecBOT"
+      date="21/0/2012" isBot hasMention>
+      <Mention>Ediberto Oliveira</Mention>
+      Esta mensagem é duplicada, esta sujeito a punição do ADMIN!
+      </ChannelMessage>
+
 
     </div>
 
@@ -21,6 +34,7 @@
 <script>
 import ChannelMessage from './Channel-Menssage';
 import At from 'vue-material-design-icons/At';
+import Vue from 'vue';
 
 export default {
   components: {
@@ -29,6 +43,10 @@ export default {
   }
 
 }
+
+Vue.component("Mention", {
+  template: '<span class="mention"><slot/></span>'
+})
 </script>
 
 <style lang="scss" scoped>
