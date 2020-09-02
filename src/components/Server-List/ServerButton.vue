@@ -1,6 +1,6 @@
 <template>
   <div class="ServerButton" :class="{'ServerButton-isHome':isHome,'ServerButton-hasNotification': hasNotification}">
-    <img src="../../../dist/discord.svg" alt="discord" v-if="isHome">
+    <!-- <img src="../../../dist/discord.svg" alt="discord" v-if="isHome"> -->
     <div class="mentions" v-if="mentions">{{mentions}}</div>
   </div>
 </template>
