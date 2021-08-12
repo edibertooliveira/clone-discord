@@ -28,7 +28,7 @@ Este projeto é um clone do aplicativo de comunicação Discord. Diferencial é 
 ## Técnologias usadas
 
 Front-end:
->  Desenvolvido usando: Framework Vue.js, SASS/SCSS para estilização
+>  Desenvolvido usando: Framework Vue.js, SASS para estilização
 
 
 ## Instalando Dependências
