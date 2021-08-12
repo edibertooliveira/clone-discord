@@ -33,7 +33,7 @@ Front-end:
 
 ## Instalando Dependências
 
-> Backend
+> Front-end
 
 ```bash
 # Clone projeto
